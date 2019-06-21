@@ -10,7 +10,7 @@ setwd("C:/Users/ethan/Desktop/Swarthmore/Spring 2019/Economics Research Seminar/
 library(readxl)
 
 #Import Dataset
-NYCLUSchools <- read_excel("Final Test Data 2009 2017.xlsx")
+NYCLUSchools <- read_excel("NYC Regents Test Data.xlsx")
 
 #Intervention Variable (Before Treatment, After Treatment)
 NYCLUSchools$BTAT <- ifelse(NYCLUSchools$Year<=2015,0,1)
